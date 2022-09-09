@@ -26,5 +26,10 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+		// On button press, opens the Currency Calculator
+		private void currencyCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(CurrencyCalculator));
+		}
 	}
 }

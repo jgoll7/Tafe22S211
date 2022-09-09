@@ -21,6 +21,7 @@ namespace Calculator
 
 	public sealed partial class CurrencyCalculator : Page
 	{
+		// Declared the values for Conversion
 		double usDollar_Euro = 0.85189982;
 		double usDollar_BritishPound = 0.72872436;
 		double usDollar_IndianRupee = 74.257327;
@@ -42,6 +43,7 @@ namespace Calculator
 			this.InitializeComponent();
 		}
 
+		// On clicking the convert button
 		private async void ConvertButton_Click(object sender, RoutedEventArgs e)
 		{
 			int fromSelection;
@@ -50,6 +52,7 @@ namespace Calculator
 			double toAmount;
 			double inputValue;
 
+			// Allows selction of the combo boxes
 			fromSelection = comboBoxFromSelection.SelectedIndex;
 			toSelection = comboBoxToSelection.SelectedIndex;
 
@@ -229,6 +232,11 @@ namespace Calculator
                 }
 			}
 		}
-		
+
+		// On exit button click, exits to the main menu
+		private void exitButton_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainMenu));
+		}
 	}
 }
