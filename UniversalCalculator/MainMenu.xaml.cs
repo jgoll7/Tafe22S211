@@ -31,5 +31,19 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(MortgageCalculator));
 		}
+<<<<<<< HEAD
+=======
+
+		// On button press, opens the Currency Calculator
+		private void currencyCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(CurrencyCalculator));
+		}
+
+		private void mathsCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainPage));
+		}
+>>>>>>> 8772ff6fd9206e8d8f09f5fbf96867e698b006c4
 	}
 }
