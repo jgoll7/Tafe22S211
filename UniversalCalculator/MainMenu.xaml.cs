@@ -31,8 +31,7 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(MortgageCalculator));
 		}
-	}
-}
+
 		// On button press, opens the Currency Calculator
 		private void currencyCalculator_Click(object sender, RoutedEventArgs e)
 		{
