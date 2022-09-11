@@ -22,11 +22,19 @@ namespace Calculator
 	/// </summary>
 	public sealed partial class MainMenu : Page
 	{
+
 		public MainMenu()
 		{
 			this.InitializeComponent();
 		}
+		public void Close()
+		{
 
+		}
+		private void exitButton_Click(object sender, RoutedEventArgs e)
+		{
+			this.Close();
+		}
 		private void mortgageCalculator_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MortgageCalculator));
@@ -42,5 +50,7 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(MainPage));
 		}
+
+		
 	}
 }

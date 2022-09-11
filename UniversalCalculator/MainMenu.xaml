@@ -11,7 +11,7 @@
     <Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="*" />
-			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="*" />
 			<ColumnDefinition Width="*" />
 			<ColumnDefinition Width="*" />
 		</Grid.ColumnDefinitions>
@@ -25,12 +25,12 @@
 		</Grid.RowDefinitions>
 		
 		
-		<TextBlock x:Name="title" Text="Universal Calculator" FontSize="75" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
-		<Image x:Name="logo" Source="/Assets/abacus.PNG" Grid.Column="2" Grid.Row="0" Height="100" Width="100"/>
-		<Button x:Name="mathsCalculator" Content="Maths Calculator" FontSize="40" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="1" Grid.Column="1" Click="mathsCalculator_Click"/>
-		<Button x:Name="mortgageCalculator" Content="Mortgage Calculator" FontSize="40" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="2" Grid.Column="1" Click="mortgageCalculator_Click"/>
-		<Button x:Name="currencyCalculator" Content="Currency Calculator" FontSize="40" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="3" Grid.Column="1" Click="currencyCalculator_Click"/>
-		<Button x:Name="exitButton" Content="Exit" FontSize="50" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="4" Grid.Column="1"/>
+		<TextBlock x:Name="title" Text="Universal Calculator" FontSize="75" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
+		<Image x:Name="logo" Source="/Assets/abacus.PNG" Grid.Column="3" Grid.Row="0" Height="100" Width="100" />
+		<Button x:Name="mathsCalculator" Content="Maths Calculator" FontSize="40" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Click="mathsCalculator_Click"/>
+		<Button x:Name="mortgageCalculator" Content="Mortgage Calculator" FontSize="40" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Click="mortgageCalculator_Click"/>
+		<Button x:Name="currencyCalculator" Content="Currency Calculator" FontSize="40" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Click="currencyCalculator_Click"/>
+		<Button x:Name="exitButton" Content="Exit" FontSize="50" HorizontalAlignment="Center" Height="150" Width="500" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Click="exitButton_Click"/>
 	
 	</Grid>
 </Page>

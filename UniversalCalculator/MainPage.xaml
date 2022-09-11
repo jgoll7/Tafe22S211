@@ -27,7 +27,8 @@
 		</Grid.RowDefinitions>
 
 		<!-- TODO -->
-		<TextBlock x:FieldModifier="public" x:Name="secondaryDisplay" Style="{StaticResource SmallTextBlockStyle}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
+		<Button x:Name="exitButton" Content="EXIT" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Right" FontSize="30" Click="exitButton_Click"/>
+		<TextBlock x:FieldModifier="public" x:Name="secondaryDisplay" Style="{StaticResource SmallTextBlockStyle}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="0,8,0,8" Width="1912" />
 
 		<TextBlock x:FieldModifier="public" x:Name="primaryDisplay" Style="{StaticResource BigTextBlockStyle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
 				<FlyoutBase.AttachedFlyout>
