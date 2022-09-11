@@ -40,8 +40,8 @@
             <TextBox x:Name="yearsTextBox" FontSize="30" PlaceholderText="30" Width="250" Margin="0,50,0,0"/>
             <TextBox x:Name="monthsTextBox" FontSize="30" PlaceholderText="0" Width="250" Margin="0,50,0,0"/>
             <TextBox x:Name="annualRateTextBox" FontSize="30" PlaceholderText="3.5" Width="250" Margin="0,50,0,0"/>
-            <TextBox x:Name="monthlyRateTextBox" FontSize="30" PlaceholderText="0.0029%" Width="250" Margin="0,50,0,0"/>
-            <TextBox x:Name="monthlyRepaymentTextBox" FontSize="30" PlaceholderText="4,490.45" Width="250" Margin="0,50,0,0"/>
+            <TextBox x:Name="monthlyRateTextBox" FontSize="30"  Width="250" Margin="0,50,0,0" IsReadOnly="True"/>
+            <TextBox x:Name="monthlyRepaymentTextBox" FontSize="30"  Width="250" Margin="0,50,0,0" IsReadOnly="True"/>
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Padding="40" Grid.Column="2" Grid.Row="2">

@@ -131,7 +131,7 @@ public sealed partial class MortgageCalculator : Page
 			
 			repaymentMonths = (years * 12) + months;
 			monthlyRate = annualRate / 100 / 12;
-			monthlyRateTextBox.Text = monthlyRate.ToString();
+			monthlyRateTextBox.Text = monthlyRate.ToString("0.0000")+"%";
 			monthlyRepayment = principal * ((monthlyRate * Math.Pow((1 + monthlyRate), repaymentMonths)) / (Math.Pow(1 + monthlyRate, repaymentMonths) - 1));
 			monthlyRepaymentTextBox.Text = monthlyRepayment.ToString("C");
 		}  
