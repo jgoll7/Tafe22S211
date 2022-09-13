@@ -51,6 +51,12 @@ namespace Calculator
 			this.Frame.Navigate(typeof(MainPage));
 		}
 
-		
+		// On pressing the Trip Calculaton button, shows this pop up message.
+		private async void tripCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			var dialogMessage = new Windows.UI.Popups.MessageDialog("This feature is currently under development. It will be completed sometime in the future.");
+			await dialogMessage.ShowAsync();
+			return;
+		}
 	}
 }
